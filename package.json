@@ -1,0 +1,20 @@
+{
+  "name": "taechallenge",
+  "version": "1.0.0",
+  "description": "Realizar una prueba funcional automatizada (Prueba E2E) de un flujo de compra en la página",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "TAE",
+    "technical",
+    "challenge"
+  ],
+  "author": "Sergio Alberto Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}

@@ -1,0 +1,47 @@
+# Examen práctico README
+This README document provides an overview of the TAE Challenge project and how to run it.
+
+#Introduction
+This Cypress project is an end-to-end automated test that coveres:
+- Navigating to https://www.demoblaze.com/index.html
+- Selecting two products and add them to the cart
+- Placing the order
+
+#Installation
+Before running the project, you must ensure that you have Node.js installed on your system. You can download Node.js from the official website https://nodejs.org/.
+
+After installing Node.js, you can install the Cypress project by running the following command:
+**npm install cypress --save-dev**
+This command will download and install the Cypress project along with its dependencies.
+
+#Project Structure
+The Cypress project has the following directory structure:
+
+cypress/
+    e2e/
+        placeOrder.cy.js
+    page-objects/
+        CartPage.js
+        HomePage.js
+        ProductPage.js
+    support/
+        commands.js
+        e2e.js
+    cypress.config.js
+
+The e2e directory contains the file 'placeOrder.js' that has the test code
+
+The page-objects directory contains the page-objects models. Each one of them has the methods or the actions that can be performed on their respective page
+
+The support directory contains any JavaScript files that allows the user to create custom commands. These files are not used in this porject
+
+#Running Tests
+To run the tests, navigate to the project directory in the terminal and run the following command:
+
+**npx cypress open**
+This command will open the Cypress Test Runner, which allows you to run individual tests.
+
+You can also run the tests in the command line by using the following command:
+
+**npx cypress run**
+This command will run all tests in the integration directory in headless mode.
